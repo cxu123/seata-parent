@@ -14,17 +14,17 @@
  *  limitations under the License.
  */
 
-package com.luck.seata.account.repository.dao;
-
-import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
-import org.springframework.data.repository.PagingAndSortingRepository;
-import org.springframework.stereotype.Repository;
-
-import com.luck.seata.account.repository.domain.Asset;
+package com.luck.seata.common.service;
 
 /**
- * The interface Asset repository.
+ * The interface Asset service.
  */
-@Repository
-public interface AssetRepository extends PagingAndSortingRepository<Asset, String>, JpaSpecificationExecutor<Asset> {
+public interface AssetService {
+
+    /**
+     * Increase int.
+     *
+     * @return the int
+     */
+    public int increase();
 }

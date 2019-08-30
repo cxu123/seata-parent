@@ -25,9 +25,9 @@ import org.springframework.stereotype.Service;
 
 import com.alibaba.dubbo.config.annotation.Reference;
 import com.luck.seata.account.repository.dao.AssignRepository;
-import com.luck.seata.account.repository.domain.AssetAssign;
-import com.luck.seata.account.service.AssetService;
-import com.luck.seata.account.service.AssignService;
+import com.luck.seata.common.repository.domain.AssetAssign;
+import com.luck.seata.common.service.AssetService;
+import com.luck.seata.common.service.AssignService;
 
 import io.seata.spring.annotation.GlobalTransactional;
 
@@ -54,7 +54,9 @@ public class AssignServiceImpl implements AssignService {
 		assignRepository.save(assetAssign);
 
 		// remote call asset service
+		
 		assetService.increase();
+		LOGGER.info("调用assetService完成");
 		return assetAssign;
 	}
 

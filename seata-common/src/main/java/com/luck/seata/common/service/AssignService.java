@@ -14,9 +14,9 @@
  *  limitations under the License.
  */
 
-package com.luck.seata.account.service;
+package com.luck.seata.common.service;
 
-import com.luck.seata.account.repository.domain.AssetAssign;
+import com.luck.seata.common.repository.domain.AssetAssign;
 
 /**
  * The interface Assign service.

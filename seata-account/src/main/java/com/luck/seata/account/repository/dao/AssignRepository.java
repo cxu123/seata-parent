@@ -20,7 +20,7 @@ import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 import org.springframework.data.repository.PagingAndSortingRepository;
 import org.springframework.stereotype.Repository;
 
-import com.luck.seata.account.repository.domain.AssetAssign;
+import com.luck.seata.common.repository.domain.AssetAssign;
 
 /**
  * The interface Assign repository.

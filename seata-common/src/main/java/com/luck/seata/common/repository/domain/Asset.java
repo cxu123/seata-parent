@@ -14,7 +14,7 @@
  *  limitations under the License.
  */
 
-package com.luck.seata.account.repository.domain;
+package com.luck.seata.common.repository.domain;
 
 import java.io.Serializable;
 import java.math.BigDecimal;

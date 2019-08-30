@@ -83,6 +83,12 @@
 				<groupId>org.apache.curator</groupId>
 				<artifactId>curator-recipes</artifactId>
 			</dependency>
+			
+			<dependency>
+				<groupId>com.luck.seata</groupId>
+				<artifactId>seata-common</artifactId>
+				<version>0.0.1-SNAPSHOT</version>
+			</dependency>
 		</dependencies>
 	</dependencyManagement>
 	<build>
